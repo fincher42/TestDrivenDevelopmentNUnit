@@ -1,2 +1,0 @@
-# TestDrivenDevelopmentNUnit
-Workshop for TDD
