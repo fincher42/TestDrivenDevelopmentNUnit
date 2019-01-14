@@ -6,7 +6,8 @@ namespace Zoo
     {
         public static string BuildUrl(string host, string name, string value)
         {
-            return $"{host}?{HttpUtility.UrlEncode(name)}={HttpUtility.UrlEncode(value)}";
+            //edit this function to pass the unit tests
+            return string.Empty;
         }
     }
 }

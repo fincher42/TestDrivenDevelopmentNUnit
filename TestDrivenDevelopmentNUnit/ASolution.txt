@@ -1,0 +1,51 @@
+﻿spoiler alert:  Below is a solution to the problem for the first 3 steps.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       public static string BuildUrl(string host, params string[] nameValuePairs)
+        {
+            string url = host+"?";
+            for (int i = 0; i < nameValuePairs.Length; i = i+2)
+            {
+                string name = HttpUtility.UrlEncode(nameValuePairs[i]);
+                string value = HttpUtility.UrlEncode(nameValuePairs[i + 1]);
+                if (i > 0) url += "&";
+                url += name + "=" + value;
+            }
+            return url;
+        }
+
